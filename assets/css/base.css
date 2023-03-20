@@ -21,4 +21,10 @@ html {
    border: none;
    padding: 0;
    border-radius: 4px;
+   background-color: transparent;
+}
+
+.btn--outline {
+   border: 1px solid var(--primary-color);
+   color: var(--primary-color);
 }

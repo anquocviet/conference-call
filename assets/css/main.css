@@ -271,3 +271,74 @@
 #chating {
    width: 440px;
 }
+
+.participant {
+   border-bottom: 2px solid #eff1f3;
+   padding: 30px 16px 30px 32px;
+}
+
+.participant__header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.participant__header-left {
+   display: flex;
+   align-items: center;
+}
+
+.participant__title {
+   font-size: 2.2rem;
+   color: var(--text-color);
+}
+
+.participant__qty-member {
+   font-size: 1.2rem;
+   color: var(--primary-color);
+   padding: 6px 7px;
+   background-color: rgba(227, 77, 115, 0.1);
+   border-radius: 16px;
+   margin-left: 4px;
+}
+
+.btn__add-member {
+   height: 34px;
+   padding: 6px 12px;
+   font-size: 1.4rem;
+}
+
+.btn__add-member i {
+   margin-right: 8px;
+}
+
+.participant__member {
+   display: flex;
+   justify-content: space-between;
+}
+
+.participant__member + .participant__member {
+   margin-top: 16px;
+}
+
+.par-member__info {
+   display: flex;
+   align-items: center;
+}
+
+.par-member__name {
+   font-size: 1.4rem;
+   margin-left: 8px;
+}
+
+.par-member__action {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 64px;
+}
+
+.par-member__action i {
+   font-size: 1.4rem;
+   color: #77808f;
+}
