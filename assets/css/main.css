@@ -1,0 +1,273 @@
+#wrapper {
+   display: flex;
+   justify-content: center;
+}
+
+#container {
+   display: flex;
+   justify-content: space-between;
+   width: 1440px;
+}
+
+/* Sider */
+
+#sider {
+   width: 90px;
+   height: 870px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.sider__above {
+   width: 100%;
+}
+
+.sider-above__list {
+   list-style-type: none;
+   padding-left: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.sider-above__img {
+   height: 32px;
+   margin-top: 50px;
+}
+
+.sider-above__item:first-child .sider-above__img {
+   height: 52px;
+   margin-top: 16px;
+}
+
+.sider__below {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   height: 112px;
+}
+
+#setting {
+   margin-top: 36px;
+}
+
+/* Meeting */
+
+#meeting {
+   flex: 1;
+   border-left: 1px solid var(--border-color);
+   border-right: 1px solid var(--border-color);
+}
+
+.meeting__wrapper {
+   padding: 0 40px;
+}
+
+.meeting__header {
+   margin-top: 32px;
+   color: var(--text-color);
+}
+
+.meeting__title-timing {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.meeting__title {
+   font-size: 2.4rem;
+   margin: 0;
+}
+
+.meeting__timing {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 92px;
+   height: 38px;
+   color: #f22128;
+   border: 1px solid currentColor;
+   border-radius: 32px;
+   font-size: 1.4rem;
+}
+
+.meeting__timing i {
+   margin-right: 8px;
+   font-size: 1rem;
+}
+
+.meeting__calender {
+   margin-top: 24px;
+   display: flex;
+   align-items: center;
+}
+
+.meeting__date {
+   display: inline-flex;
+   align-items: center;
+   font-size: 1.4rem;
+   margin: auto 24px auto 16px;
+   position: relative;
+}
+
+.meeting__date::after {
+   display: block;
+   content: "";
+   height: 14px;
+   border-left: 2px solid #e7e9ec;
+   position: absolute;
+   top: 0;
+   right: -14px;
+}
+
+.meeting__date img {
+   margin-right: 8px;
+}
+
+.meeting__time {
+   font-size: 1.4rem;
+}
+
+.meeting__host {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 80px;
+   height: 28px;
+   color: var(--white);
+   border: 1px solid var(--primary-color);
+   background-color: var(--primary-color);
+   border-radius: 32px;
+   font-size: 1.2rem;
+   padding: 6px;
+}
+
+.meeting__host i {
+   margin-right: 6px;
+}
+
+.meeting__main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 24px;
+}
+
+.meeting__owner {
+   position: relative;
+   background-color: #f8f9fa;
+   border-radius: 8px;
+}
+
+.meeting__owner > img {
+   width: 100%;
+   margin-top: 12px;
+   border-radius: 8px;
+}
+
+.meeting__owner-name,
+.meeting__owner-mic {
+   position: absolute;
+   top: 24px;
+}
+
+.meeting__owner-name {
+   left: 24px;
+   background-color: #727477;
+   height: 36px;
+   border-radius: 4px;
+   padding: 8px;
+   display: flex;
+   align-items: center;
+   font-size: 1.5rem;
+   color: #e0e0e1;
+}
+
+.meeting__owner-name i {
+   font-size: 0.8rem;
+   color: var(--green);
+   margin-right: 8px;
+}
+
+.meeting__owner-mic {
+   right: 24px;
+   line-height: 0;
+}
+
+.participant__list {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 24px;
+   list-style: none;
+   padding-left: 0;
+}
+
+.participant__item {
+   position: relative;
+   border-radius: 10px;
+   overflow: hidden;
+}
+
+.participant__name,
+.participant__mic {
+   position: absolute;
+   top: 10px;
+}
+
+.participant__name {
+   background-color: rgba(114, 116, 119, 0.6);
+   height: 28px;
+   border-radius: 4px;
+   padding: 8px;
+   display: flex;
+   align-items: center;
+   font-size: 1.2rem;
+   color: #e0e0e1;
+   left: 8px;
+}
+
+.participant__name i {
+   font-size: 0.8rem;
+   color: var(--green);
+   margin-right: 8px;
+}
+
+.participant__mic {
+   right: 8px;
+   line-height: 0;
+}
+
+.participant__mic img {
+   height: 28px;
+}
+
+/* Meeting action */
+.meeting__action {
+   margin-top: 12px;
+   display: flex;
+   align-items: center;
+}
+
+.action__btn + .action__btn {
+   margin-left: 16px;
+}
+
+.action__btn:not(:nth-child(4)) {
+   line-height: 0;
+}
+
+.btn--end {
+   height: 44px;
+   background-color: #ee2328;
+   color: var(--white);
+   padding: 0 16px;
+   font-size: 1.6rem;
+}
+
+/* Chatting */
+
+#chating {
+   width: 440px;
+}
