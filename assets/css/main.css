@@ -281,6 +281,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+   margin-bottom: 16px;
 }
 
 .participant__header-left {
@@ -313,8 +314,28 @@
 }
 
 .participant__member {
+   position: relative;
    display: flex;
    justify-content: space-between;
+}
+
+.typing {
+   position: relative;
+   margin-bottom: 36px;
+}
+
+.typing::after {
+   display: inline-block;
+   content: "Typing ...";
+   position: absolute;
+   top: 90%;
+   left: 48px;
+   background-color: #f8f9fa;
+   color: #9197a4;
+   font-size: 1.5rem;
+   padding: 8px 8px;
+   border-radius: 4px;
+   z-index: 1;
 }
 
 .participant__member + .participant__member {
@@ -341,4 +362,113 @@
 .par-member__action i {
    font-size: 1.4rem;
    color: #77808f;
+}
+
+.meet {
+   padding: 30px 16px 30px 32px;
+}
+
+.meet__chat-list {
+   list-style: none;
+   padding-left: 0;
+}
+
+.meet__chat-item + .meet__chat-item {
+   margin-top: 24px;
+}
+
+.chat__header {
+   display: flex;
+   align-items: center;
+}
+
+.meet__title {
+   font-size: 2.2rem;
+   color: var(--text-color);
+   margin-bottom: 28px;
+}
+
+.chat__member-avt {
+   position: relative;
+}
+
+.chat__member-avt::before {
+   display: block;
+   content: "";
+   position: absolute;
+   bottom: 4px;
+   right: 2px;
+   width: 8px;
+   height: 8px;
+   background-color: var(--green);
+   border-radius: 99px;
+   border: 1px solid var(--white);
+}
+
+.chat__member-name {
+   font-size: 1.3rem;
+   font-weight: 600;
+   margin-left: 16px;
+   color: var(--text-color);
+}
+
+.chat__member-time {
+   margin-left: 4px;
+   font-size: 1.2rem;
+   color: #979ca6;
+}
+
+.chat__comment {
+   padding: 12px;
+   background-color: #f8f9fa;
+   font-size: 1.4rem;
+   border-radius: 8px;
+   margin: 4px 0 0 50px;
+}
+
+.meet__chat-item:nth-child(3) .chat__comment {
+   display: inline-block;
+   background-color: #fdf1f4;
+   font-size: 2.2rem;
+}
+
+.meet__action {
+   display: flex;
+   align-items: center;
+}
+
+.meet__input {
+   position: relative;
+}
+
+.meet__input-msg {
+   padding: 9px 12px;
+   width: 324px;
+   font-size: 1.5rem;
+   line-height: 1.5;
+   color: #757575;
+   background-color: #f2f4f6;
+   outline: none;
+   border: none;
+   border-radius: 4px;
+}
+
+.meet__input .meet__input-icon {
+   position: absolute;
+   top: 50%;
+   right: 12px;
+   transform: translateY(-50%);
+   font-size: 1.6rem;
+}
+
+.meet__input-msg::placeholder {
+   color: #bfc4cd;
+}
+
+.meet__send-msg {
+   transform: rotate(45deg);
+   font-size: 2.2rem;
+   color: var(--primary-color);
+   margin-left: 26px;
+   padding: 4px;
 }
